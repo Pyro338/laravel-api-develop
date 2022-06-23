@@ -1,0 +1,1607 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+html body {
+  background-color: #080808;
+  color: #fff;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+}
+
+.wrapper {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page1_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.text-sm {
+  font-size: 13px;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: inherit;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 47px;
+    line-height: 1em;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  h5 {
+    font-size: 20px;
+  }
+
+  .text-xl {
+    font-size: 72px;
+  }
+}
+
+.btn {
+  border-radius: 15px;
+}
+
+.btn.btn-primary {
+  background-color: #14d869;
+  border-color: #14d869;
+}
+
+.btn.btn-primary:hover {
+  background-color: #0dbf5a;
+  border-color: #0dbf5a;
+}
+
+.form-control {
+  border-radius: 0;
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5) inset;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-9by16::before {
+  padding-top: 125%;
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1250px;
+  }
+}
+
+.backshadow {
+  background-color: rgba(0, 32, 65, 0.8);
+  padding: 5px;
+}
+
+/*-- Preloader --*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+#preloader .preloader-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1001;
+  width: 100px;
+  height: 100px;
+  margin-left: -50px;
+  margin-top: -50px;
+  text-align: center;
+  color: #343a40;
+  font-size: 14px;
+}
+
+#preloader .preloader-content .spinner {
+  margin: 0 auto 14px;
+  width: 56px;
+}
+
+#preloader .preloader-content .square {
+  -webkit-animation-name: preloader-zoom-out;
+  animation-name: preloader-zoom-out;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  background: #14d869;
+  border-radius: 3px;
+  float: left;
+  height: 24px;
+  margin: 2px;
+  width: 24px;
+}
+
+#preloader .preloader-content .square:nth-child(2) {
+  -webkit-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
+
+#preloader .preloader-content .square:nth-child(3) {
+  -webkit-animation-delay: 300ms;
+  animation-delay: 300ms;
+}
+
+#preloader .preloader-content .square:nth-child(4) {
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+}
+
+@-webkit-keyframes preloader-zoom-out {
+  from,
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  45%,
+  55% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes preloader-zoom-out {
+  from,
+  to {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  45%,
+  55% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.main {
+  padding: 60px 0;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  height: 38px;
+  max-width: 275px;
+  width: auto;
+}
+
+/*-- features --*/
+.features {
+  padding: 0;
+  margin: 40px 0 0 40px;
+  font-size: 21px;
+  line-height: 1.2em;
+  list-style: none;
+}
+
+.features li {
+  padding-left: 60px;
+  margin-bottom: 25px;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 50px;
+}
+
+.features li.vip {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_vip_white_large.png");
+}
+
+.features li.betback {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_betback_white_large.png");
+}
+
+.features li.btccurrency {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_currency_white_large.png");
+}
+
+.features li.joinnow {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_100_white_large.png");
+}
+
+/*-- feature-menu --*/
+.menu-section {
+  text-align: center;
+}
+
+.feature-menu {
+  padding: 0;
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 1em;
+  list-style: none;
+}
+
+.feature-menu li {
+  display: inline;
+  display: inline-block;
+  padding: 20px 25px 20px 10px;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/arrow_white_large.png");
+  background-size: 18px;
+}
+
+.feature-menu li.last {
+  background: none;
+}
+
+.feature-menu li a {
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 26px;
+  padding: 10px 0 10px 30px;
+  color: #fff;
+}
+
+.feature-menu li.create-account a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_create_white_large.png");
+}
+
+.feature-menu li.select-game a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_select_white_large.png");
+}
+
+.feature-menu li.place-bet a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_bet_white_large.png");
+}
+
+@media (min-width: 992px) {
+  .feature-menu {
+    font-size: 21px;
+    line-height: 1.2em;
+  }
+
+  .feature-menu li {
+    padding: 30px 40px 30px 10px;
+    background-size: 25px;
+  }
+
+  .feature-menu li a {
+    background-size: 42px;
+    padding: 10px 0 10px 50px;
+  }
+}
+
+.main-chars-bg {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -60px;
+  height: 100%;
+  text-align: right;
+}
+
+.main-chars-bg img {
+  height: 100%;
+  width: auto;
+}
+
+@media (min-width: 1200px) {
+  .main-chars-bg {
+    display: block;
+  }
+}
+
+/*-- register-box --*/
+.register-box {
+  color: #1b1b1b;
+  background-color: #fff;
+  padding: 40px;
+  margin: 10px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+
+.register-box .title {
+  font-weight: normal;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.register-box a {
+  color: #1b1b1b;
+  text-decoration: underline;
+}
+
+.register-box a:hover {
+  text-decoration: none;
+}
+
+.slider-menu,
+.slider-menu .register-box,
+.register-toggler {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.slider-menu .register-box {
+  color: #fff;
+  background-color: #232a33;
+  margin: 0;
+  padding-top: 80px;
+  width: 380px;
+  min-height: 880px;
+  position: absolute;
+  z-index: 10;
+  left: -400px;
+  top: 0;
+  bottom: 0;
+}
+
+.slider-menu.slider-active .register-box {
+  left: 0;
+}
+
+.register-toggler {
+  position: fixed;
+  top: 25px;
+  left: 15px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  text-indent: -999px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-color: #000000;
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/toggler-icon.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+  transform: rotate(180deg);
+  transition-delay: 0.3s;
+}
+
+.slider-menu.slider-active .register-toggler {
+  transform: rotate(0);
+}
+
+.slider-menu .register-box a {
+  color: #14d869;
+}
+
+.slider-menu .register-box label {
+  color: #6e6e6e;
+}
+
+.slider-menu .register-box .form-control {
+  background-color: #1a212a;
+  border: 1px solid #3b4149;
+  color: #568d99;
+}
+
+.slider-menu .icons img {
+  max-height: 30px;
+}
+
+@media (min-width: 992px) {
+  .slider-menu.slider-active {
+    padding-left: 380px;
+  }
+}
+
+/*-- footer --*/
+.footer {
+  font-size: 12px;
+  padding-bottom: 2rem;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+.copyright .footer-links,
+.copyright .footer-links li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.copyright .footer-links li {
+  margin: 0 5px;
+  display: inline;
+}
+
+/* .copyright .footer-links li a {
+  color: #dc7301;
+} */
+
+/*-- footer icons --*/
+.footer-icons {
+  margin-bottom: 20px;
+}
+
+.icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.icons li {
+  display: inline;
+  margin: 0;
+}
+
+.icons img {
+  max-height: 40px;
+  filter: grayscale(100%);
+  margin: 0.3rem;
+  opacity: 0.7;
+}
+
+/*-- landing page 2--*/
+.wrapper.landing-page2 {
+  color: #414141;
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page2_bg.jpg");
+}
+
+.landing-page2 .highlight {
+  color: #004b98;
+}
+
+.landing-page2 .features li.vip {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_vip_blue_large.png");
+}
+
+.landing-page2 .features li.betback {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_betback_blue_large.png");
+}
+
+.landing-page2 .features li.btccurrency {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_currency_blue_large.png");
+}
+
+.landing-page2 .features li.joinnow {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_100_blue_large.png");
+}
+
+.landing-page2 .feature-menu li a {
+  color: #004b98;
+}
+
+.landing-page2 .feature-menu li.create-account a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_create_blue_large.png");
+}
+
+.landing-page2 .feature-menu li.select-game a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_select_blue_large.png");
+}
+
+.landing-page2 .feature-menu li.place-bet a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_bet_blue_large.png");
+}
+
+@media (min-width: 992px) {
+  .landing-page2 .feature-menu li {
+    background-image: url("https://static.cdn1.io/playerapi/assets/images/arrow_blue_large.png");
+  }
+
+  .landing-page2 .feature-menu li.last {
+    background: none;
+  }
+}
+
+.landing-page2 .footer {
+  padding: 25px 0;
+  background-color: #080808;
+}
+
+/*-- landing page 3--*/
+.wrapper.landing-page3 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page3_bg.jpg");
+}
+
+.landing-page3 .main {
+  padding: 0;
+}
+
+.landing-page3 .main-chars-bg {
+  display: block;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.landing-page3 .main-chars-bg img {
+  height: auto;
+  width: 100%;
+}
+
+/*-- landing page 4--*/
+.wrapper.landing-page4 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page4_bg.jpg");
+}
+
+.landing-page4 .main {
+  padding: 0;
+}
+
+.landing-page4 .main-chars-bg {
+  display: block;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.landing-page4 .main-chars-bg img {
+  height: auto;
+  width: 100%;
+}
+
+/*-- landing page 5--*/
+.wrapper.landing-page5 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page5_bg.jpg");
+}
+
+.landing-page5 .main {
+  padding: 0;
+}
+
+.landing-page5 .main-chars-bg {
+  display: block;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.landing-page5 .main-chars-bg img {
+  height: auto;
+  width: 100%;
+}
+
+/* .landing-page5 .footer-icons .logo {
+  float: left;
+  margin-right: 0.3rem;
+}
+
+.landing-page5 .footer-icons img {
+  height: 20px;
+  width: auto;
+}
+
+.landing-page5 .footer-icons .copy {
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.landing-page5 .footer-icons .license {
+  float: left;
+}
+
+.landing-page5 .footer-icons .social .facebook {
+  margin-right: 0.5rem;
+} */
+
+.landing-page5 .register-box {
+  background-color: #1f1f1f;
+}
+
+.landing-page5 .register-box a {
+  color: #bc0f22;
+}
+
+.landing-page5 .register-box .btn.btn-primary {
+  background-color: #bc0f22;
+  border-color: #bc0f22;
+}
+
+.landing-page5 .register-box .form-group {
+  margin-bottom: 10px;
+}
+
+.landing-page5 .register-box .form-control {
+  background-color: #acacac;
+  border: 1px solid #383838;
+  color: #1f1f1f;
+}
+
+.landing-page5 .feature-menu li.create-account a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_create_white_large_l5.png");
+}
+
+.landing-page5 .feature-menu li.select-game a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_select_white_large_l5.png");
+}
+
+.landing-page5 .feature-menu li.place-bet a {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/icon_bet_white_large_l5.png");
+}
+
+.landing-page5 .text-xl {
+  text-shadow: 0px 0px 25px #ff3939;
+}
+
+@media (min-width: 768px) {
+  .landing-page5 .text-xl {
+    font-size: 64px;
+  }
+}
+
+.landing-page5.slider-menu.slider-active {
+  padding-left: 0;
+}
+
+.landing-page5 .main {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.landing-page5.slider-menu.slider-active .main {
+  padding-left: 380px;
+}
+
+/*-- landing page 6--*/
+.wrapper.landing-page6 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page6_bg.jpg");
+}
+
+/*-- landing page 7--*/
+.wrapper.landing-page7 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page7_bg.jpg");
+}
+
+/*-- landing page 8--*/
+.wrapper.landing-page8 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page8_bg.jpg");
+}
+
+.landing-page8 .main {
+  padding: 0;
+}
+
+.landing-page8 .main-chars-bg {
+  display: block;
+  position: relative;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.landing-page8 .main-chars-bg img {
+  height: auto;
+  width: 100%;
+}
+
+.landing-page8.slider-menu.slider-active {
+  padding-left: 0;
+}
+
+.landing-page8 .main {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  transition-delay: 0.3s;
+}
+
+.landing-page8.slider-menu.slider-active .main {
+  padding-left: 380px;
+}
+
+/*-- landing page 9--*/
+.wrapper.landing-page9 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page9_bg.jpg");
+}
+
+.wrapper.landing-page9 .headingimg {
+  margin: 0 1rem;
+}
+
+/*-- landing page 10--*/
+.wrapper.landing-page10 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page10_bg.jpg");
+}
+
+.landing-page10.slider-menu .register-box {
+  background-color: #002041;
+}
+
+.landing-page10.slider-menu .register-box .form-control {
+  background-color: #08182c;
+  border: 1px solid #1c3856;
+  color: #5986c9;
+}
+
+@media (min-width: 768px) {
+  .landing-page10 .text-xl {
+    font-size: 3.5rem;
+  }
+}
+
+.landing-page10 .backshadow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+/*-- landing page 11--*/
+.wrapper.landing-page11 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page11_bg.jpg");
+}
+
+.landing-page11.slider-menu .register-box {
+  background-color: #002041;
+}
+
+.landing-page11.slider-menu .register-box .form-control {
+  background-color: #08182c;
+  border: 1px solid #1c3856;
+  color: #5986c9;
+}
+
+.landing-page11 .elp-logo {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.landing-page11 .elp-logo img {
+  max-width: 250px;
+  height: auto;
+  margin: auto;
+}
+
+.landing-page11 .visit-sportsbook img {
+  max-width: 300px;
+  height: auto;
+}
+
+.landing-page11 .text-xl {
+  font-weight: normal;
+}
+
+.landing-page11 .backshadow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.landing-page11 .betback-currency-logo {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  margin: 2rem;
+  list-style: none;
+}
+
+.landing-page11 .betback-currency-logo li {
+  padding-top: 80px;
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center top;
+  display: inline-block;
+  width: 120px;
+  font-size: 20px;
+}
+
+.landing-page11 .betback-currency-logo .betback {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/betback_icon.png");
+}
+
+.landing-page11 .betback-currency-logo .currency {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/currency_icon.png");
+}
+
+@media (min-width: 768px) {
+  .landing-page11 .main-chars-bg {
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    z-index: 0;
+  }
+
+  .landing-page11 .main-chars-bg img {
+    width: 840px;
+  }
+
+  .landing-page11 .feature-menu {
+    position: relative;
+    z-index: 10;
+    font-size: 14px;
+    width: 690px;
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .landing-page11 .text-xl {
+    font-size: 3rem;
+  }
+
+  .landing-page11 .elp-logo {
+    text-align: left;
+  }
+
+  .landing-page11 .text-button {
+    position: relative;
+    z-index: 10;
+    width: 630px;
+    margin-left: auto;
+  }
+
+  .landing-page11 .betback-currency-logo {
+    margin-top: 4rem;
+  }
+}
+
+/*-- landing page 12--*/
+#bgVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.video-page {
+  background-image: none;
+}
+
+.video-page .main {
+  position: relative;
+  z-index: 2;
+  height: 100vh !important;
+}
+
+.video-page .video-hightlight-content {
+  position: fixed;
+  max-width: 950px;
+  margin: auto;
+  bottom: 140px;
+  text-align: center;
+}
+
+.video-page .video-hightlight-content .maintext-section {
+  margin: 5rem 0 3rem;
+}
+
+.video-page .video-hightlight-content .logo-tagline {
+  width: 70%;
+  margin: auto;
+}
+
+.video-page .register-box {
+  background-color: #002041;
+}
+
+.video-page .register-box .form-control {
+  background-color: #08182c;
+  border: 1px solid #1c3856;
+  color: #5986c9;
+}
+
+@media (min-width: 768px) {
+  .video-page .video-hightlight-content {
+    bottom: 130px;
+    left: 0;
+    right: 0;
+    padding-left: 250px;
+  }
+
+  .video-page .video-hightlight-content .maintext-section {
+    margin: 5rem 0 5rem;
+  }
+}
+
+/*-- Officail page 16--*/
+.wrapper.official-page {
+  background-image: none;
+}
+
+.bgImage {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/main_background_lowered_for_text.jpg");
+}
+
+.bgImage-inner {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/players_version_A_lowered.png");
+}
+
+.landing-page17 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/players_version_B_lowered.png");
+}
+
+.landing-page18 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/players_version_C_lowered.png");
+}
+
+.bgImage img {
+  position: absolute;
+  bottom: 0;
+}
+
+.official-page .main {
+  position: relative;
+  z-index: 2;
+  height: 100vh !important;
+}
+
+.official-page .register-box .form-control {
+  background-color: #08182c;
+  border: 1px solid #1c3856;
+  color: #5986c9;
+}
+
+.official-page .official-body-text {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 50px;
+  text-align: center;
+}
+
+.official-page .official-logo-section {
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.official-page .bonus-text {
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.official-page .register-box {
+  background-color: #002041;
+}
+
+@media (min-width: 960px) {
+  .official-page .official-body-text {
+    padding-left: 280px;
+  }
+
+  .official-page .official-logo-section img {
+    max-width: 880px;
+  }
+
+  .official-page .bonus-text img {
+    max-width: 600px;
+  }
+}
+
+.landing-page19 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/5_players_main_lowered.png");
+}
+
+.landing-page19 .official-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 960px) {
+  .landing-page19 .official-logo-section {
+    padding: 0 150px;
+  }
+
+  .landing-page19 .official-logo-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .landing-page19 .blogo {
+    padding-right: 50px;
+  }
+}
+
+.landing-page20 .official-logo-section img {
+  max-width: 500px;
+}
+
+.landing-page20 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/officialpage/background_combined.jpg");
+}
+
+.landing-page20 .youtube-video {
+  max-width: 350px;
+  margin: 1rem auto 2rem auto;
+}
+
+.landing-page20 .join-now img {
+  max-width: 350px;
+}
+
+@media (min-width: 960px) {
+  .landing-page20 .youtube-video {
+    max-width: 500px;
+  }
+}
+
+/*-- landing page 21--*/
+.wrapper.landing-page21 {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page21_bg.jpg");
+  height: 100%;
+}
+
+.wrapper.landing-page21.slider-menu.slider-active .main {
+  padding-left: 0;
+}
+
+.etherscan_graphic {
+  width: 100%;
+  height: 70px;
+  margin: 1rem 0;
+}
+
+.etherscan_graphic img {
+  height: 100%;
+  width: auto;
+  padding-left: 10%;
+}
+
+.promotion-text {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/promotion_text_graphic.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  height: 120px;
+  width: 100%;
+}
+
+.landing-page21 .main-chars-bg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .etherscan_graphic {
+    height: 100px;
+  }
+
+  .etherscan_graphic img {
+    padding-left: 31%;
+  }
+
+  .promotion-text {
+    background-size: contain;
+    height: 200px;
+  }
+}
+
+/*-- landing page 22--*/
+.wrapper.landing-page22 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page22_bg.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.interbox {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-style: italic;
+  padding: 3rem;
+}
+
+.interbox h4 {
+  margin: 0;
+}
+
+.interbox ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.interbox ul li {
+  padding: 1rem;
+  padding-left: 90px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100px;
+}
+
+.interbox ul li.bitcion {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/bitcion-icon.png");
+}
+
+.interbox ul li.choices {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/choices-icon.png");
+}
+
+.interbox ul li.bonus {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/bonus-icon.png");
+}
+
+.utb-section {
+  max-width: 450px;
+  margin-bottom: 1rem;
+}
+
+/*-- landing page 23--*/
+.wrapper.landing-page23 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page23_bg.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+/*-- landing page 24--*/
+.wrapper.landing-page24 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page24_bg.png");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.landing-page24 .interbox {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  padding: 1rem;
+}
+
+.coingapge-section {
+  max-width: 220px;
+  margin-bottom: 1rem;
+}
+
+.coingapge-section-inner {
+  max-width: 220px;
+}
+
+@media (min-width: 768px) {
+  .landing-page24 .interbox {
+    left: 28%;
+  }
+
+  .coingapge-section,
+  .coingapge-section-inner {
+    max-width: 320px;
+  }
+}
+
+/*-- landing page 25--*/
+.wrapper.landing-page25 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page25_bg.jpg");
+  height: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.casinobox {
+  position: fixed;
+  max-width: 300px;
+  bottom: 180px;
+  right: 12%;
+  padding: 1rem;
+}
+
+.casinobox img {
+  margin-bottom: 2rem;
+}
+
+.casinobox .participate-now {
+  max-width: 180px;
+}
+
+/*-- landing page 26--*/
+.landing-page26 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page26_bg.jpg");
+}
+
+.landing-page26 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/landing_page26_inner_bg.png");
+}
+
+.esp-body-text {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.esp-body-text .divider-line {
+  margin: 0 1rem;
+}
+
+/*-- landing page 27--*/
+.landing-page27 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_psg/background_1920x1080.jpg");
+}
+
+.landing-page27 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_psg/main_graphic.png");
+}
+
+.landing-page27 .blogo img {
+  max-width: 760px;
+  width: 100%;
+}
+.landing-page27.official-page .bonus-text {
+  padding-top: 0;
+}
+
+.landing-page27.official-page .bonus-text img {
+  max-width: 700px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .landing-page27 .blogo img,
+  .landing-page27.official-page .bonus-text img {
+    max-width: 60%;
+  }
+}
+
+/*-- landing page 28--*/
+.landing-page28 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_solo/background_1920x1080.jpg");
+}
+
+.landing-page28 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_solo/main_graphic.png");
+}
+.landing-page28.official-page .official-body-text {
+  top: 120px;
+}
+.win-big,
+.register-hoy {
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .landing-page28.official-page .official-body-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .win-big {
+    margin-top: 10px;
+    max-width: 350px;
+  }
+  .register-hoy {
+    max-width: 350px;
+  }
+}
+
+/*-- landing page 29--*/
+.landing-page29 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_psg/background_1920x1080.jpg");
+}
+.landing-page29 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_psg/main_graphic.png");
+}
+.landing-page29 .instalogo img {
+  max-width: 200px;
+  width: 100%;
+}
+.landing-page29.official-page .bonus-text {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center !important;
+}
+.landing-page29.official-page .bonus-text img {
+  max-width: 700px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .landing-page29.official-page .official-body-text {
+    padding-left: 380px;
+  }
+  .landing-page29 .official-logo-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .landing-page29 .blogo img {
+    max-width: 550px;
+  }
+  .landing-page29 .instalogo img {
+    max-width: 350px;
+  }
+  .landing-page29.official-page .bonus-text img {
+    max-width: 450px;
+  }
+  .landing-page29.official-page .bonus-text .bonus-txt2 img {
+    max-width: 300px;
+  }
+}
+
+/*-- landing page 30--*/
+.landing-page30 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_solo/background_1920x1080.jpg");
+}
+.landing-page30 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/maria_solo/main_graphic.png");
+}
+.landing-page30.official-page .official-body-text {
+  top: 120px;
+}
+@media (min-width: 768px) {
+  .landing-page30.official-page .official-body-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/*-- landing page 31--*/
+.landing-page31 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/sofia_psf/background_1920x1080.jpg");
+}
+.landing-page31 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/sofia_psf/main_graphic.png");
+}
+.landing-page31 .instalogo img {
+  max-width: 200px;
+  width: 100%;
+}
+.landing-page31.official-page .bonus-text {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center !important;
+}
+.landing-page31.official-page .bonus-text img {
+  max-width: 700px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .landing-page31.official-page .official-body-text {
+    padding-left: 380px;
+  }
+  .landing-page31 .official-logo-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .landing-page31 .blogo img {
+    max-width: 550px;
+  }
+  .landing-page31 .instalogo img {
+    max-width: 350px;
+  }
+  .landing-page31.official-page .bonus-text img {
+    max-width: 450px;
+  }
+  .landing-page31.official-page .bonus-text .bonus-txt2 img {
+    max-width: 300px;
+  }
+}
+
+/*-- landing page 32--*/
+.landing-page32 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/sofia_solo/background_1920x1080.jpg");
+}
+.landing-page32 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/sofia_solo/main_graphic.png");
+}
+.landing-page32.official-page .official-body-text {
+  top: 120px;
+}
+@media (min-width: 768px) {
+  .landing-page32.official-page .official-body-text {
+    padding-left: 400px;
+  }
+}
+
+/*-- landing page 33--*/
+.wrapper.landing-page33 {
+    background-image: url("https://static.cdn1.io/playerapi/assets/images/atropay/background_1920x1080.jpg");
+}
+.landing-page33.slider-menu.slider-active {
+    padding-left: 0;
+}
+.landing-page33  .astropay {
+    width: 100%;
+    height: 70px;
+    margin: 3rem 0 1rem;
+}
+.landing-page33  .astropay img {
+    height: 100%;
+    width: auto;
+    padding-left: 25%;
+}
+.landing-page33 .promotion-text {
+    background-image: url("https://static.cdn1.io/playerapi/assets/images/atropay/promotion_text_graphic.png");
+    background-repeat: no-repeat;
+    background-position: 35% top;
+    background-size: cover;
+    height: 120px;
+    width: 100%;
+}
+.landing-page33 .main-chars-bg {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://static.cdn1.io/playerapi/assets/images/atropay/main_graphic.png");
+    background-repeat: no-repeat;
+    background-position: 80% 200px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (min-width:960px) {
+    .landing-page33  .astropay {
+        height: 100px;
+        margin-top: 5rem;
+    }
+    .landing-page33  .astropay img {
+        padding-left: 35%;
+    }
+    .landing-page33 .promotion-text {
+        background-size: contain;
+        background-position: 50px top;
+        height: 100%;
+    }
+    .landing-page33 .main-chars-bg {
+        background-position: center top;
+    }
+}
+
+/*-- landing page 34, 35 --*/
+.landing-page34 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/mc-kekel/background_1920x1080.jpg");
+}
+.landing-page34 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/mc-kekel/main_graphic.png");
+}
+.landing-page35 .bgImage {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/natalia-gibson/background_1920x1080.jpg");
+}
+.landing-page35 .bgImage-inner {
+  background-image: url("https://static.cdn1.io/playerapi/assets/images/natalia-gibson/main_graphic.png");
+}
+.natalia-mc-kekel .instalogo img {
+  max-width: 200px;
+  width: 100%;
+}
+.natalia-mc-kekel.official-page .bonus-text {
+  padding-top: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center !important;
+}
+.natalia-mc-kekel.official-page .bonus-text img {
+  max-width: 700px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .natalia-mc-kekel.official-page .official-body-text {
+    padding-left: 380px;
+  }
+  .natalia-mc-kekel .official-logo-section {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center !important;
+  }
+  .natalia-mc-kekel .blogo img {
+    max-width: 650px;
+  }
+  .natalia-mc-kekel .instalogo img {
+    max-width: 180px;
+  }
+  .natalia-mc-kekel.landing-page35 .instalogo img {
+    max-width: 220px;
+  }
+  .natalia-mc-kekel.official-page .bonus-text img {
+    max-width: 320px;
+  }
+  .natalia-mc-kekel.official-page .bonus-text .bonus-txt2 img {
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,63 @@
+{
+    "name": "gamebetr/api",
+    "type": "library",
+    "description": "Gamebetr api package",
+    "authors": [
+        {
+            "name": "Steve Harmeyer",
+            "email": "sharmeyer@dbd.net"
+        }
+    ],
+    "require": {
+        "ext-json": "*",
+        "dbd-net/signed-request": "^1.0",
+        "dbdnet/global-auth": "^1.0",
+        "dbdnet/utility": "^1.0",
+        "doctrine/dbal": "^3.1",
+        "guzzlehttp/guzzle": "~7.0.0",
+        "spatie/image": "^1.7",
+        "submtd/laravel-request-scope": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Affiliate": "Gamebetr\\Api\\Facades\\Affiliate",
+                "AffiliateProcess": "Gamebetr\\Api\\Facades\\AffiliateProcess",
+                "Api": "Gamebetr\\Api\\Facades\\Api",
+                "Avatar": "Gamebetr\\Api\\Facades\\Avatar",
+                "Bank": "Gamebetr\\Api\\Facades\\Bank\\Bank",
+                "Paybetr": "Gamebetr\\Api\\Facades\\Paybetr",
+                "Playbetr": "Gamebetr\\Api\\Facades\\Playbetr",
+                "Tags": "Gamebetr\\Api\\Facades\\Bank\\Tags",
+                "Template": "Gamebetr\\Api\\Facades\\Template",
+                "TransactionBatch": "Gamebetr\\Api\\Facades\\TransactionBatch",
+                "User": "Gamebetr\\Api\\Facades\\User",
+                "Vip": "Gamebetr\\Api\\Facades\\Vip",
+                "VipProcess": "Gamebetr\\Api\\Facades\\VipProcess"
+            },
+            "providers": [
+                "Gamebetr\\Api\\Providers\\ApiServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gamebetr\\Api\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
